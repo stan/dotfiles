@@ -1,0 +1,6 @@
+[user]
+	name = Stanislas Mazurek
+	email = stanislasmazurek@gmail.com
+[alias]
+	co = checkout
+	st = status

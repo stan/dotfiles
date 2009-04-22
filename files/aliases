@@ -1,0 +1,30 @@
+# General stuff
+alias h='history'
+alias j="jobs -l"
+alias l="ls -lah"
+alias ll="ls -l"
+alias la='ls -A'
+alias cl='clear'
+alias ..='cd ..'
+alias ...='cd .. ; cd ..'
+alias mv='mv -i'
+alias rm='rm -i'
+
+# subversion/git stuff
+function st {
+  if [ -d ".svn" ]; then
+    svn status -u
+  else
+    git status
+  fi
+}
+
+# ruby stuff
+alias irb='irb --simple-prompt -rubygems'
+
+# rails stuff
+alias sc='script/console'
+alias ss='script/server' # start up the beast; use "ss -d" to detach
+
+# Colorized grep
+alias grep='GREP_COLOR="1;32" LANG=C grep --color=auto'
