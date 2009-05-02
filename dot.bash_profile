@@ -28,3 +28,7 @@ complete -C "$HOME/dotfiles/bin/rake_tabber" -o default rake
 # Keep machine-specific stuff in .bash_local
 touch ~/.bash_local
 source ~/.bash_local
+
+# Mercurial & OSX Terminal issues
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
