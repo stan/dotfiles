@@ -7,8 +7,16 @@ alias la='ls -A'
 alias cl='clear'
 alias ..='cd ..'
 alias ...='cd .. ; cd ..'
+alias cd..='cd ..'
 alias mv='mv -i'
 alias rm='rm -i'
+alias tgz='tar -czvf $1 --exclude=.svn $2'
+
+
+function mkd {
+  mkdir $1;
+  cd $1;
+}
 
 # subversion/git stuff
 function st {
