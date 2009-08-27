@@ -1,5 +1,12 @@
 require 'rubygems'
 
+class Object
+  def pbcopy(string)
+    IO.popen('pbcopy', 'w') { |f| f.puts(string) }
+    nil
+  end
+end
+
 def time(times = 1)
   require 'benchmark'
   ret = nil
