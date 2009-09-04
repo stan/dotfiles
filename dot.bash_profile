@@ -24,6 +24,10 @@ extract () {
 
 export PATH="/opt/ruby-enterprise-1.8.6/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/local/scala/bin:/usr/local/erlang/bin:$PATH"
 
+# rvm gem related
+if [ -s ~/.rvm/scripts/rvm ] ; then source ~/.rvm/scripts/rvm ; fi
+	
+# no care of case for completion
 bind "set completion-ignore-case on"
 
 # set PATH so it includes user's private bin if it exists
@@ -39,7 +43,6 @@ export HISTCONTROL=ignoredups
 export HISTIGNORE="&:ls:ll:cd \-:ls -l:cd ..:l:h" 
 export CLICOLOR=1;
 export EDITOR=mate
-
 
 # Load everything up
 source "$HOME/dotfiles/files/aliases"
@@ -59,4 +62,3 @@ export LANG=en_US.UTF-8
 clear;
 echo -ne "${COLOR_GRAY}Uptime: "; uptime
 echo -ne "${COLOR_GRAY}Server time is: "; date
-echo -ne "${LIGHTGREEN}<voice type='creepy'>${LIGHTBLUE}WHAT ARE YOU DOING DAVE?${LIGHTGREEN}</voice>${NC}";
