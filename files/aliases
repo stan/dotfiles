@@ -26,6 +26,8 @@ function st {
   fi
 }
 
+alias svnaddall='svn st | grep "^?" | awk -F "      " '{print $2}' | grep -v ".git" | xargs svn add'
+
 alias gpull='git pull origin master'
 alias gpush='git push origin master'
 
