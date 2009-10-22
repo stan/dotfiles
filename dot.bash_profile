@@ -36,7 +36,7 @@ if [ -d ~/bin ] ; then
 fi
 
 # misc
-add_to_path "$HOME/dot-rot/bin"
+add_to_path "$HOME/dotfiles/bin"
 
 # other misc
 export HISTCONTROL=ignoredups
