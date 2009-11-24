@@ -22,7 +22,7 @@ extract () {
     fi
 }
 
-export PATH="/opt/ruby-enterprise-1.8.6/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/local/scala/bin:/usr/local/erlang/bin:$PATH"
+export PATH="/opt/ruby-enterprise-1.8.6/bin:/usr/local/bin:/usr/local/sbin:/usr/local/nginx/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/local/scala/bin:/usr/local/erlang/bin:$PATH"
 
 # rvm gem related
 if [ -s ~/.rvm/scripts/rvm ] ; then source ~/.rvm/scripts/rvm ; fi
